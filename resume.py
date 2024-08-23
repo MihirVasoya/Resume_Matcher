@@ -12,7 +12,7 @@ import base64
 # Set your OpenAI API key here
 
 # openai.api_key = r"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"
-openai.api_key= "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"
+openai.api_key= r"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"
 data=[]
 
 
