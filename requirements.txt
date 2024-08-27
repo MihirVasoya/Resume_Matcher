@@ -1,5 +1,5 @@
 pandas
 streamlit
-openai==0.28
+google-generativeai
 python-docx
 PyMuPDF
