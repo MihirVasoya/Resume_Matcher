@@ -110,8 +110,8 @@ if st.button("Generate Report") and (job_description_file or job_description) is
                this is resume: {resume_input} find the details above from this
 
             """
-        st.write(input_text)
-        st.write("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4")
+        # st.write(input_text)
+        # st.write("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4")
 
         generated_resume = model.generate_content([input_text])
        
@@ -119,7 +119,7 @@ if st.button("Generate Report") and (job_description_file or job_description) is
         data.append({"Name":resume_file.name ,"Summary-Match Percentage":str(generated_resume.text)})
         i=i+1
     df = pd.DataFrame(data)
-    st.write("scs")
+    # st.write("scs")
     st.write(df)
    
     csv = df.to_csv(index=False)
